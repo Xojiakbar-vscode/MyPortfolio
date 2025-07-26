@@ -2,6 +2,15 @@ import React, { useState , useEffect} from 'react';
 import './Portfolio.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import img from "../assets/figma.png";
+import img1 from "../assets/counter.png";
+import img2 from "../assets/tailor.png";
+import img3 from "../assets/kitoblar.png";
+import img4 from "../assets/aviachipta.png";
+import img5 from "../assets/todo_app.png";
+
+
+
 
 const Portfolio = () => {
 
@@ -20,42 +29,42 @@ const Portfolio = () => {
       title: 'Figma Maktabi',
       url: "https://schooll-weld.vercel.app/",
       category: 'app',
-      image: '../src/assets/figma.png'
+      image: img
     },
     {
       id: 2,
       title: 'Hisoblagich Ilova',
       url: "https://caunter-delta.vercel.app/",
       category: 'product',
-      image: '../src/assets/counter.png'
+      image: img1
     },
     {
       id: 3,
       title: 'Tikuvchi do‘koni Namangan',
       url: "https://tailor-eta.vercel.app/",
       category: 'branding',
-      image: '../src/assets/tailor.png'
+      image: img2
     },
     {
       id: 4,
       title: 'Kitoblar',
       url:"http://localhost/kitoblar/",
       category: 'books',
-      image: '../src/assets/kitoblar.png'
+      image: img3
     },
     {
       id: 5,
       title: 'Aviachipta sayt dizayni',
       url: "http://localhost/aviachipta/",
       category: 'app',
-      image: '../src/assets/aviachipta.png'
+      image: img4
     },
     {
       id: 6,
       title: 'Vazifalar ro‘yxati',
       url: "http://localhost/todo_app/",
       category: 'product',
-      image: '../src/assets/todo_app.png'
+      image: img5
     }
   ];
 
