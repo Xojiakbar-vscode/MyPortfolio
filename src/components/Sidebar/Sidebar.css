@@ -1,0 +1,114 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #040b14;
+  color: white;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.sidebar-content {
+  padding: 30px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid #2c2f3f;
+  margin: 0 auto 15px;
+  display: block;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  color: #fff;
+  background-color: #212431;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #149ddd;
+  transform: translateY(-3px);
+}
+
+.navigation {
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #2a3547;
+}
+
+.nav-item .active {
+  background-color: #149ddd;
+}
+
+.nav-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.nav-item span {
+  flex-grow: 1;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.active {
+    transform: translateX(0);
+  }
+}
