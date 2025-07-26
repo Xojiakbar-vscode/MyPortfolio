@@ -26,7 +26,7 @@ const About = () => {
 
         <div className="about-content">
           <div className="about-image">
-            <img src={img} alt="Profile" data-aos="fade-up"/>
+            <img src={img} alt="Profile" data-aos="zoom-in"/>
           </div>
 
           <div className="about-info" data-aos="fade-up">
